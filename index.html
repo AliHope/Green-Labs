@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Green Labs</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./js/slickSlider/slick.css"/>
+    <link rel="stylesheet" href="./js/slickSlider/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="hidden-lg hidden-md hidden-sm mobile-menu__overflow"></div>
+
+    <div class="container-fluid header-background">
+        <div class="row">
+            <div class="header-slider slick-slider">
+                <div class="slide slide1">
+                    <img src="images/slider-header/slide1.jpg" alt="Slide1">
+                </div>
+                <div class="slide">
+                    <img src="images/slider-header/slide2.jpg" alt="Slide2">
+                </div>
+                <div class="slide">
+                    <img src="images/slider-header/slide3.jpg" alt="Slide3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid header">
+        <div class="row fill header-top-panel">
+            <div class="col-lg-offset-1 col-lg-5 col-md-5 col-sm-3 col-xs-3 header-top-panel__logo">
+                <img src="images/logo.png">
+            </div>
+            <div class="col-lg-6 col-md-7 col-sm-9 col-xs-8 hidden-xs header-top-panel__menu-desktop">
+                <ul class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                    <li class="desktop-menu__main">ГЛАВНАЯ</li>
+                    <li id="desktop-menu__about">О ПЕЩЕРЕ</li>
+                    <li id="desktop-menu__services">УСЛУГИ</li>
+                    <li id="desktop-menu__price">ПРАЙС</li>
+                    <li id="desktop-menu__reviews">ОТЗЫВЫ</li>
+                    <li id="desktop-menu__contacts">КОНТАКТЫ</li>
+                </ul>
+            </div>
+            <div class="hidden-lg hidden-md hidden-sm header-top-panel__burger"></div>
+            <div class="col-xs-12 header-top-panel__menu-mobile">
+                <div class="menu-mobile__logo"></div>
+                <ul>
+                    <li class="mobile-menu__main">ГЛАВНАЯ</li>
+                    <li id="mobile-menu__about" class="mobile-menu__about">О ПЕЩЕРЕ</li>
+                    <li id="mobile-menu__services" class="mobile-menu__services">УСЛУГИ</li>
+                    <li id="mobile-menu__price" class="mobile-menu__price">ПРАЙС</li>
+                    <li id="mobile-menu__reviews" class="mobile-menu__reviews">ОТЗЫВЫ</li>
+                    <li id="mobile-menu__contacts" class="mobile-menu__contacts">КОНТАКТЫ</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row fill header-title">
+            <span class="col-lg-offset-1">Целебный микроклимат соляных пещер</span>
+        </div>
+        <div class="row fill header-subtitle">
+            <span class="col-lg-offset-1">Уникальный комплекс рядом с Вашим домом</span>
+        </div>
+        <div class="row fill header-more-button">
+            <button id="header-more-button" class="col-lg-offset-1" type="button">УЗНАТЬ ПОДРОБНЕЕ</button>
+        </div>
+    </div>
+
+    <div id="about-the-cave" class="container-fluid about-the-cave">
+        <div class="row fill">
+            <div class="col-lg-offset-1 col-lg-6 col-md-6 col-sm-11 col-xs-11 about-the-cave-description">
+                <span>О соляной пещере</span>
+                <p>Соляные пещеры - уникальный метод профилактики и лечения заболеваний,
+                    основанный на использовании искусственного микроклимата, близкого
+                    по параметрам к условиям подземных соляных спелеолечебниц.</p>
+                <p>
+                    Процедуры в пещере способствуют профилактике аллергий, бронхолёгочных
+                    и дерматологических заболеваний. Оказывают противовоспалительное
+                    воздействие на организм. Пребывание в галокамере расслабляет нервную
+                    систему, снимает стресс и улучшает сон.</p>
+                <button id="desktop-about-the-cave-button" class="hidden-xs" type="button">УЗНАТЬ ПРАЙС</button>
+            </div>
+            <div class="hidden-lg hidden-md hidden-sm col-xs-12 about-the-cave-button">
+                <button id="mobile-about-the-cave-button" type="button">УЗНАТЬ ПРАЙС</button>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-11 col-xs-12 about-the-cave-pic">
+                <img src="images/about-the-cave.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid reasons-to-visit">
+        <div class="row fill">
+            <div class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-offset-1 col-sm-10 col-xs-offset-1 col-xs-10 reasons-to-visit-description">
+                <span class="reasons-to-visit-description__title">Почему стоит посетить соляную пещеру?</span>
+                <span class="reasons-to-visit-description__subtitle">Некоторые рекомендации, которые помогут вам разобраться
+                    в преимуществах нашей соляной пещеры</span>
+            </div>
+        </div>
+        <div class="row fill">
+            <div class="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12 slick-slider reasons-to-visit-slider">
+                <div id="slide1" class="col-lg-4 col-md-4 col-sm-4 col-xs-4 slide slide1">
+                        <div class="caption">
+                            <span class="reasons-to-visit-slider-slide__title">Профилактика<br>заболеваний</span>
+                            <p class="reasons-to-visit-slider-slide__description">Благодаря лечебным свойствам
+                                пещеры вы сможете предупредить заболевания и укрепить иммунитет.</p>
+                        </div>
+                </div>
+                <div id="slide2" class="col-lg-4 col-md-4 col-sm-4 col-xs-4 slide slide2">
+                    <div class="caption">
+                        <span class="reasons-to-visit-slider-slide__title">Профессиональное<br>оборудование</span>
+                        <p class="reasons-to-visit-slider-slide__description">Благодаря этому, вы получаете
+                            максимальный лечебный эффект во время сеанса.</p>
+                    </div>
+                </div>
+                <div id="slide3" class="col-lg-4 col-md-4 col-sm-4 col-xs-4 slide slide3">
+                    <div class="caption">
+                        <span class="reasons-to-visit-slider-slide__title">Отличное место<br>для всей семьи</span>
+                        <p class="reasons-to-visit-slider-slide__description">Соляная пещера - это отличное
+                            место для расслабления, борется с усталостью и депрессией.</p>
+                    </div>
+                </div>
+                <div id="slide4" class="col-lg-4 col-md-4 col-sm-4 col-xs-4 slide slide4">
+                    <div class="caption">
+                        <span class="reasons-to-visit-slider-slide__title">Доступное<br>оздоровление</span>
+                        <p class="reasons-to-visit-slider-slide__description">У нас самые доступные цены
+                            на все абонементы, а также самый полный комплекс услуг.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid social-networks">
+        <div class="row fill">
+            <span class="col-lg-offset-2 col-lg-4 col-md-offset-2 col-md-4 col-sm-6 col-xs-offset-0 col-xs-12 social-networks__title">Подписывайтесь на нас в соцсетях</span>
+            <ul class="col-lg-3 col-md-3 col-sm-offset-1 col-sm-4 col-xs-offset-0 col-xs-10 social-networks__icons">
+                <li class="social-networks__icons__vk"><a href="https://vk.com"></a></li>
+                <li class="social-networks__icons__fb"><a href="https://www.facebook.com"></a></li>
+                <li class="social-networks__icons__inst"><a href="https://www.instagram.com/"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="services" class="container-fluid services">
+        <div class="row fill">
+            <div class="col-lg-offset-1 col-lg-5 col-md-6 col-sm-12 col-xs-12 services-description">
+                <span class="services-description__title">Услуги</span>
+                <span class="services-description__subtitle hidden-xs">Комната ароматерапии</span>
+                <p class="services-description__text1 hidden-xs">Ароматопрофилактика является одним из путей укрепления здоровья
+                    и повышения иммунитета.
+                 </p>
+                <p class="services-description__text2 hidden-xs">
+                    Для профилактики и лечения заболеваний органов дыхания ароматические
+                    масла являются незаменимым средством. Это объясняется тем, что во время
+                    сеансов ароматерапии происходит не только воздействие на обонятельные
+                    рецепторы слизистой оболочки носа, но и активное воздействие ароматических
+                    молекул на слизистые оболочки дыхательных путей - носа, трахеи, бронхов.
+                    Это позволяет эффективно лечить кашель, бронхит, пневмонию, астму, туберкулез,
+                    простудные заболевания, исключить развитие осложнений после гриппа,
+                    ОРЗ, ангины.</p>
+                <span class="services-description-cost hidden-xs">Узнать стоимость услуги</span>
+            </div>
+            <ul class="col-lg-6 col-md-6 col-sm-12 hidden-xs services-pics">
+                <li class="services-pics1 services-pics__salt-cave">
+                    <span>Соляная пещера</span>
+                </li>
+                <li class="services-pics2 services-pics__aromatherapy-room">
+                    <span>Комната ароматерапии</span>
+                </li>
+                <li class="services-pics3 services-pics__massage">
+                    <span>Массаж</span>
+                </li>
+                <li class="services-pics4 services-pics__phyto-bar">
+                    <span>Фито-бар</span>
+                </li>
+            </ul>
+        </div>
+        <div class="row fill">
+            <div class="hidden-ld hidden-md hidden-sm col-xs-12 slick-slider services-slider">
+                <div class="hidden-ld hidden-md hidden-sm slide slide-salt-cave">
+                    <div class="services-slide-pic">
+                        <span>Соляная пещера</span>
+                    </div>
+                    <span class="services-slide-title">Соляная пещера</span>
+                    <p class="services-slide-text1">Соляные пещеры - уникальный метод профилактики и лечения заболеваний,
+                        основанный на использовании искусственного микроклимата, близкого по параметрам к условиям подземных
+                        соляных спелеолечебниц.</p>
+                    <p class="services-slide-text2">Процедуры в пещере способствуют профилактике аллергий, бронхолёгочных
+                        и дерматологических заболеваний. Оказывают противовоспалительное воздействие на организм.
+                        Пребывание в галокамере расслабляет нервную систему, снимает стресс и улучшает сон.</p>
+                    <span class="services-description-cost">Узнать стоимость услуги</span>
+                </div>
+                <div class="slide slide-aromatherapy-room">
+                    <div class="services-slide-pic">
+                        <span>Комната ароматерапии</span>
+                    </div>
+                    <span class="services-slide-title">Комната ароматерапии</span>
+                    <p class="services-slide-text1">Ароматопрофилактика является одним из путей укрепления здоровья
+                        и повышения иммунитета.</p>
+                    <p class="services-slide-text2">Для профилактики и лечения заболеваний органов дыхания ароматические
+                        масла являются незаменимым средством. Это объясняется тем, что во время сеансов ароматерапии
+                        происходит не только воздействие на обонятельные рецепторы слизистой оболочки носа, но и
+                        активное воздействие ароматических молекул на слизистые оболочки дыхательных путей - носа,
+                        трахеи, бронхов. Это позволяет эффективно лечить кашель, бронхит, пневмонию, астму, туберкулез,
+                        простудные заболевания, исключить развитие осложнений после гриппа, ОРЗ, ангины.</p>
+                    <span class="services-description-cost">Узнать стоимость услуги</span>
+                </div>
+                <div class="slide slide-massage">
+                    <div class="services-slide-pic">
+                        <span>Массаж</span>
+                    </div>
+                    <span class="services-slide-title">Массаж</span>
+                    <p class="services-slide-text1">Сеанс массажа – это не только приятный процесс, но и во всех
+                        отношениях полезный.</p>
+                    <p class="services-slide-text2">Польза массажа воистину многогранна и комплексна. Массаж
+                        благоприятно воздействует на кожу, подкожножировой слой, мышцы, суставы, связки и сухожилия,
+                        а также на  кровеносную, лимфатическую, нервную и дыхательную систему. Именно поэтому многие
+                        после массажа чувствуют себя как-будто заново родились. Конечно, массаж бывает разный, и массаж
+                        спины сильно отличается от массажа лица, но результат всегда один – польза.</p>
+                    <span class="services-description-cost">Узнать стоимость услуги</span>
+                </div>
+                <div class="slide slide-phyto-bar">
+                    <div class="services-slide-pic">
+                        <span>Фито-бар</span>
+                    </div>
+                    <span class="services-slide-title">Фито-бар</span>
+                    <p class="services-slide-text1">В здоровом теле — здоровый дух, как гласит народная мудрость.</p>
+                    <p class="services-slide-text2">А свежевыжатые напитки, как известно, это настоящая кладезь
+                        витаминов. Именно поэтому фитобар Польза предлагает вам впитать в себя силу даров природы в
+                        своих стенах. Овощные и фруктовые соки в дополнение к другим вкусным напиткам и закускам помогут
+                        вам поддерживать себя в форме.</p>
+                    <span class="services-description-cost">Узнать стоимость услуги</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid video-background">
+        <div class="row">
+            <div class="video">
+                <video class="video_bg" autoplay="autoplay"  loop="loop" muted>
+                    <source src="video/1.mp4" type="video/mp4"/>
+                    <source src="video/2.webm" type="video/webm"/>
+                </video>
+            </div>
+            <div class="video-background-overlay"></div>
+            <div class="video-background-content">
+                <span class="video-background-content__title">
+                    Дизайнерский интерьер
+                </span>
+                <span class="video-background-content__subtitle">
+                    В котором, вы захотите задержаться
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid prices">
+        <div class="row fill">
+            <div id="prices" class="col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-4 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10 prices-description">
+                <span class="prices-description__title">Прайс</span>
+                <span class="prices-description__subtitle">Здесь вы можете ознакомиться с ценами на наши услуги</span>
+            </div>
+        </div>
+        <div class="row fill">
+            <div class="col-lg-offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12 slick-slider prices-slider">
+                <div class="slide slide1">
+                    <span class="titleItem">Соляная пещера</span>
+                    <span class="timeItem">40<span class="min"> мин.</span></span>
+                    <span class="typeItem">Разовое посещение / Абонемент (10 сеансов)</span>
+                    <div class="priceItemContainer">
+                        <span class="type adult">Взрослый</span>
+                        <span class="dotsline adult_dots"></span>
+                        <span class="cost priceCost">400 / 3500</span>
+                    </div>
+                    <div class="priceItemContainer">
+                        <span class="type adultAndKid">Взрослый и ребенок (до 10 лет)</span>
+                        <span class="dotsline adultAndKid_dots"></span>
+                        <span class="cost priceCost">450 / 4000</span>
+                    </div>
+                    <div class="priceItemContainer">
+                        <span class="type kid">Ребенок (10-16 лет)</span>
+                        <span class="dotsline kid_dots"></span>
+                        <span class="cost priceCost">300 / 2500</span>
+                    </div>
+                    <div class="priceItemContainer">
+                        <span class="type old">Пенсионер</span>
+                        <span class="dotsline old_dots"></span>
+                        <span class="cost priceCost">250 / 2000</span>
+                    </div>
+                    <div class="priceItemContainer">
+                        <span class="type oldAndKid">Пенсионер и ребенок (до 10 лет)</span>
+                        <span class="dotsline oldAndKid_dot"></span>
+                        <span class="cost priceCost">300 / 2500</span>
+                    </div>
+                    <button class="writeVisit">Записаться</button>
+                </div>
+                <div class="slide slide2">
+                    <span class="titleItem">Дополнительные услуги</span>
+                    <span class="timeItem">15<span class="min"> мин.</span></span>
+                    <span class="typeItem">Разовое посещение</span>
+                    <div class="otherPriceItemContainer">
+                        <span class="type">Ароматерапия+аппаратный</span>
+                        <div class="blockWithDotsLine">
+                            <span class="type foot_massage">массаж ног</span>
+                            <span class="dotsline foot_massage_dots"></span>
+                            <span class="costt foot_massage_cost">300</span>
+                        </div>
+                    </div>
+                    <div class="otherPriceItemContainer">
+                        <span class="type">Ароматерапия+аппаратный</span>
+                        <div class="blockWithDotsLine">
+                            <span class="type face_massage">массаж лица</span>
+                            <span class="dotsline face_massage_dots"></span>
+                            <span class="costt face_massage_cost">250</span>
+                        </div>
+                    </div>
+                    <div class="otherPriceItemContainer">
+                        <span class="type">Ароматерапия+аппаратный</span>
+                        <div class="blockWithDotsLine">
+                            <span class="type food_face_massage">массаж ног+аппаратный массаж лица</span>
+                            <span class="dotsline food_face_massage_dots"></span>
+                            <span class="costt food_face_massage_cost">350</span>
+                        </div>
+                    </div>
+                    <button class="writeVisit">Записаться</button>
+                </div>
+                <div class="slide slide3">
+                        <span class="titleItem">Команат аромотерапии</span>
+                        <span class="timeItem">30<span class="min"> мин.</span></span>
+                        <span class="typeItem">Разовое посещение / Абонемент (10 сеансов)</span>
+                        <div class="priceItemContainer">
+                            <span class="type adult">Взрослый</span>
+                            <span class="dotsline adult_dots"></span>
+                            <span class="cost priceCost">250 / 2000</span>
+                        </div>
+                        <div class="priceItemContainer">
+                            <span class="type adultAndKid">Взрослый и ребенок (до 10 лет)</span>
+                            <span class="dotsline adultAndKid_dots"></span>
+                            <span class="cost priceCost">300 / 2500  </span>
+                        </div>
+                        <div class="priceItemContainer">
+                            <span class="type kid">Ребенок (10-16 лет)</span>
+                            <span class="dotsline kid_dots"></span>
+                            <span class="cost priceCost">200 / 1500</span>
+                        </div>
+                        <div class="priceItemContainer">
+                            <span class="type old">Пенсионер</span>
+                            <span class="dotsline old_dots"></span>
+                            <span class="cost priceCost">200 / 1550</span>
+                        </div>
+                        <div class="priceItemContainer">
+                            <span class="type oldAndKid">Пенсионер и ребенок (до 10 лет)</span>
+                            <span class="dotsline oldAndKid_dot"></span>
+                            <span class="cost priceCost">250 / 2000</span>
+                        </div>
+                        <button class="writeVisit">Записаться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid sales">
+        <div class="row fill">
+        <span class="hidden-sm hidden-xs sales-background__title">
+            Скидкой можно воспользоваться только один раз
+        </span>
+            <div class="col-lg-12 col-md-12  col-sm-12 col-xs-12 sales-description">
+                <span class="sales-description__title">Скидка 10% на ВСЕ</span>
+                <span class="sales-description__subtitle">Предъявителю, этой листовки.</span>
+                <span class="sales-description__text">Если у Вас по какой-то причине нет ее в наличии, вы всегда
+можете скачать ее нажав кнопку <b>«Загрузить»</b> ниже.</span>
+                <a href="images/Sale-GreenLabs.jpg" class="sales-description__button" download>ЗАГРУЗИТЬ</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="review" class="container-fluid review">
+        <div class="row fill">
+            <span class="review-slider__title">Отзывы</span>
+            <span class="review-slider__subtitle">Отзывы наших довольных клиентов, которые воспользовались нашими услугами</span>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 review-slider">
+                <div class="containerSlider" id="containerSlider">
+                    <ul>
+                        <li id="personSlide1">
+                            <img src="./images/review-slider/slide1.jpg">
+                        </li>
+                        <li id="personSlide2">
+                            <img src="./images/review-slider/slide2.jpg">
+                        </li>
+                        <li id="personSlide3">
+                            <img src="./images/review-slider/slide3.jpg">
+                        </li>
+                        <li id="personSlide4">
+                            <img src="./images/review-slider/slide4.jpg">
+                        </li>
+                        <li id="personSlide5">
+                            <img src="./images/review-slider/slide5.jpg">
+                        </li>
+                        <img src="images/reason-slider/prev-arrow.png" class="left">
+                        <img src="images/reason-slider/next-arrow.png" class="right">
+                        <span class="review-slider__quote"></span>
+                    </ul>
+                </div>
+                <span id="containerText" class="containerText">О соляной комнате как способе лечения болезней органов дыхания я впервые
+                    узнала, когда поехала отдыхать в санаторий. К услугам отдыхающих была предоставлена такая услуга.
+                    Я посетила десять сеансов по 30 минут каждый. И вспоминаю это время с удовольствием. Процедура
+                    очень приятная, не требует приложения каких-либо усилий. А главное она полезная для системы органов
+                    дыхания.</span>
+                <span id="containerName" class="containerName">Анна Ленская, 31 год</span>
+            </div>
+            <div id="dotsContainer" class="dotsContainer">
+                <ul>
+                    <li id="dot1" class="dots"></li>
+                    <li id="dot2" class="dots"></li>
+                    <li id="dot3" class="dots"></li>
+                    <li id="dot4" class="dots"></li>
+                    <li id="dot5" class="dots"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="contacts" class="container-fluid contacts">
+        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:100%;width:100%;'><div id='gmap_canvas' style='height:100%;width:100%;'></div><div><small><a href="http://www.googlemapsgenerator.com/">Googlemapsgenerator.com</a></small></div><div><small><a href="http://kantoorruimtehuren.nu/">KantoorruimteHuren.nu</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:16,center:new google.maps.LatLng(59.92624009999999,30.366867299999967),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(59.92624009999999,30.366867299999967)});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+        <div class="fill">
+            <div class="blockContactInformation">
+                <p class="title">Контакты</p>
+                <div class="informationItem address">
+                    <span>Адрес:</span>
+                    <span>С.-Петербург, Полтавский проезд, д.2.</span>
+                </div>
+                <div class="informationItem time">
+                    <span>Часы работы:</span>
+                    <span>ежедневно 11:00 ‒ 21:00</span>
+                </div>
+                <div class="informationItem telephone">
+                    <span>Телефон:</span>
+                    <span>+7 (911) 926-65-90</span>
+                </div>
+                <div class="socNetworks">
+                    <a href="https://www.instagram.com/" class="in"></a>
+                    <a href="https://vk.com" class="vk"></a>
+                    <a href="https://www.facebook.com" class="fb"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="./js/jquery.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/slickSlider/slick.min.js"></script>
+<script src="./js/Carousel.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
