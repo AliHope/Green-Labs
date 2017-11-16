@@ -319,4 +319,9 @@ $( document ).ready(function() {
         $("html,body").animate({scrollTop: $("#contacts").offset().top}, 1000);
     });
 
+    $('.sales-description__button').click(function (e) {
+        e.preventDefault();
+        $("html,body").animate({scrollTop: $("#contacts").offset().top}, 1000);
+    });
+
 });

@@ -625,7 +625,7 @@ body.active {
 }
 
 .social-networks__icons {
-    max-width: 294px;
+    max-width: 180px;
     display: inline-block;
     text-align: justify;
     -moz-text-align-last: justify;
@@ -650,10 +650,6 @@ body.active {
     background: url("../images/soc/fb.png") no-repeat 49% 50%;
 }
 
-.social-networks__icons li.social-networks__icons__inst {
-    background: url("../images/soc/inst.png") no-repeat 50% 50%;
-}
-
 .social-networks__icons li a {
     display: inline-block;
     width: 55px;
@@ -668,11 +664,6 @@ body.active {
 
 .social-networks__icons li.social-networks__icons__fb:hover {
     background: #ffffff url("../images/soc/fb__active.png") no-repeat 49% 50%;
-    transition: .2s;
-}
-
-.social-networks__icons li.social-networks__icons__inst:hover {
-    background: #ffffff url("../images/soc/inst__active.png") no-repeat 50% 50%;
     transition: .2s;
 }
 
@@ -1245,6 +1236,7 @@ body.active {
 
 .sales {
     height: 400px;
+    overflow: hidden;
     background: rgb(20, 128, 122);
     background: -webkit-linear-gradient(77deg, rgb(20, 128, 122) 0%, rgb(27, 163, 156) 100%);
     background: -o-linear-gradient(77deg, rgb(20, 128, 122)0%, rgb(27, 163, 156) 100%);
@@ -1253,18 +1245,24 @@ body.active {
 }
 
 .sales .fill {
-    position: relative;
     height: 400px;
-    background-image: url(../images/sales-background.png);
-    background-position: 100% -100%;
-    background-repeat: no-repeat;
+    position: relative;
+}
+
+.sales-background-block {
+    width: auto;
+    max-width: 550px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    box-sizing: border-box;
+    margin-top: 45px;
     transition: .2s;
 }
 
-.sales-background__title {
-    position: absolute;
-    right: 15%;
-    top: 50px;
+.sales-background-block__title {
+    display: block;
+    height: 33px;
     font-family: SegoeUI, sans-serif;
     font-size: 15px;
     color: rgb(233, 233, 233);
@@ -1273,6 +1271,11 @@ body.active {
     -moz-transform: matrix( 1.0010946023297,0,0,1.00093606487765,0,0);
     -webkit-transform: matrix( 1.0010946023297,0,0,1.00093606487765,0,0);
     -ms-transform: matrix( 1.0010946023297,0,0,1.00093606487765,0,0);
+    margin-left: 1px;
+}
+
+.sales-background-block img {
+    width: 100%;
 }
 
 .sales-description {
@@ -1488,10 +1491,18 @@ body.active {
 
 /**********************************CONTACTS**********************************/
 .contacts {
+    height: 815px;
     padding-right: 0;
     padding-left: 0;
+}
+
+.contacts .fill {
     height: 815px;
     position: relative;
+}
+
+.contacts-map {
+    position: absolute;
 }
 
 .blockContactInformation {
@@ -1556,16 +1567,6 @@ body.active {
     margin-right: 40px;
 }
 
-.blockContactInformation .socNetworks .in{
-    background: url(../images/contacts/instagram.png) no-repeat 48% 50%;
-    transition: 0.2s;
-}
-
-.blockContactInformation .socNetworks .in:hover{
-    background: url(../images/contacts/instagram_hover.png) no-repeat 48% 50%, rgb(27, 163, 156);;
-    transition: .2s;
-}
-
 .blockContactInformation .socNetworks .vk{
     background: url(../images/contacts/vk.png) no-repeat 46% 50%;
     transition: 0.2s;
@@ -1592,15 +1593,24 @@ body.active {
         height: 620px;
     }
 
+    .sales .fill {
+        height: 620px;
+    }
+
     .sales-background__title {
         display: none;
     }
 
-    .sales .fill {
-        height: 620px;
-        background-image: url(../images/sales-background.png);
-        background-position: 50% 206%;
-        background-repeat: no-repeat;
+    .sales-background-block {
+        width: 100%;
+        left: 50%;
+        right: auto;
+        bottom: -160px;
+        margin-left: -275px;
+    }
+
+    .sales-background-block__title {
+        display: none;
     }
 
     .sales-description {
@@ -1773,10 +1783,6 @@ body.active {
     .reasons-to-visit-slider .slick-dots li {
         margin: 0 2px;
         z-index: 30;
-    }
-
-    .social-networks__title {
-        margin: 0;
     }
 
     .social-networks__title {
@@ -2140,13 +2146,14 @@ body.active {
     .social-networks__title {
         line-height: 1.5;
         min-width: 0;
-        margin-top: 40px;
+        margin: 40px 0 0;
     }
 
     .social-networks__icons {
-        width: 275px;
+        max-width: none;
+        width: 170px;
         left: 50%;
-        margin: 40px 0 0 -136px;
+        margin: 40px 0 0 -85px;
     }
 
     .services {
@@ -2376,10 +2383,11 @@ body.active {
 
     .sales .fill {
         height: 610px;
-        background-image: url(../images/sales-background.png);
-        background-position: 50% 320px;
-        background-size: 100%;
-        background-repeat: no-repeat;
+    }
+
+    .sales-background-block {
+        max-width: 540px;
+        margin-left: -270px;
     }
 
     .sales-description {
@@ -2445,10 +2453,15 @@ body.active {
         right: -13px;
     }
 
-    .sales .fill {
-        background-image: url(../images/sales-background.png);
-        background-position: 50% 415px;
-        background-size: 100%;
-        background-repeat: no-repeat;
+    .sales-background-block {
+        bottom: -26%;
+        left: 0;
+        margin: 45px 0;
+    }
+}
+
+@media (max-width: 415px) {
+    .sales-background-block {
+        bottom: -12%;
     }
 }
