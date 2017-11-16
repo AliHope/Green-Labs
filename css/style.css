@@ -1286,6 +1286,7 @@ body.active {
 
 .sales-description__title {
     display: block;
+    height: 43px;
     font-size: 35px;
     font-family: SegoeUiBold, sans-serif;
     color: rgb(255, 255, 255);
@@ -1308,7 +1309,6 @@ body.active {
 
 .sales-description__subtitle {
     font-size: 20px;
-    margin-top: 12px;
 }
 
 .sales-description__text {
