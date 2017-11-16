@@ -6,7 +6,6 @@
     if ($ === undefined) {
         return;
     }
-
     var defaultConfig = {
         num: 3, //要显示的数量，应该是个奇数
         maxWidth: 250, //代表中央图片的宽度
@@ -17,6 +16,8 @@
         scale: 0.8,
         distance: 50
     };
+
+    var vectorClick;
 
 
     function getzIndexValue(num, direction) {
@@ -49,8 +50,12 @@
         var targetCss;
         var firstIndexBeforeScroll, lastIndexBeforeScroll;
         if (direction === 'left') {
+            vectorClick = 'left';
+            window.vectorClickW = vectorClick;
             newIndex = ($container.data('index') - 1 + totalNum) % totalNum;
         } else if (direction === 'right') {
+            vectorClick = 'right';
+            window.vectorClickW = vectorClick;
             newIndex = ($container.data('index') + 1) % $container.data('totalNum');
         } else {
             return;
@@ -373,7 +378,6 @@ var Name4 = 'Катя Литвинова, 27 лет';
 var Name5 = 'Креонова Людмила, 41 год';
 
 var container = document.getElementById('containerSlider');
-var dotsContainer = document.getElementById('dotsContainer').querySelector('ul');
 
 function preparationSlider() {
     container.querySelectorAll('li')[0].style.opacity = 1;
@@ -381,6 +385,12 @@ function preparationSlider() {
 };
 
 preparationSlider();
+
+var a1 =true;
+var a2 =true;
+var a3 =true;
+var a4 =true;
+var a5 =true;
 
 container.addEventListener('click', function () {
     container.querySelectorAll('li').forEach( function (element) {
@@ -398,6 +408,21 @@ container.addEventListener('click', function () {
                     name.innerText = Name1;
                     parentElText.appendChild(text);
                     parentElName.appendChild(name);
+
+                    if(a1) {
+                        if (vectorClickW === 'right') {
+                            text.classList.add('rightToLeftAnimate');
+                            name.classList.add('rightToLeftAnimate');
+                        }
+                        if (vectorClickW === 'left') {
+                            text.classList.add('leftToRightAnimate');
+                            name.classList.add('leftToRightAnimate');
+                        }
+                        a1 = false;
+                        a2 = true;
+                        a5 = true;
+                    }
+
                     document.getElementById('dot1').classList.add('activeDot');
                     document.getElementById('dot2').classList.remove('activeDot');
                     document.getElementById('dot3').classList.remove('activeDot');
@@ -413,6 +438,19 @@ container.addEventListener('click', function () {
                     name.innerText = Name2;
                     parentElText.appendChild(text);
                     parentElName.appendChild(name);
+                    if(a2) {
+                        if (vectorClickW === 'right') {
+                            text.classList.add('rightToLeftAnimate');
+                            name.classList.add('rightToLeftAnimate');
+                        }
+                        if (vectorClickW === 'left') {
+                            text.classList.add('leftToRightAnimate');
+                            name.classList.add('leftToRightAnimate');
+                        }
+                        a1 = true;
+                        a2 = false;
+                        a3 = true;
+                    }
                     document.getElementById('dot1').classList.remove('activeDot');
                     document.getElementById('dot2').classList.add('activeDot');
                     document.getElementById('dot3').classList.remove('activeDot');
@@ -428,6 +466,19 @@ container.addEventListener('click', function () {
                     name.innerText = Name3;
                     parentElText.appendChild(text);
                     parentElName.appendChild(name);
+                    if(a3) {
+                        if (vectorClickW === 'right') {
+                            text.classList.add('rightToLeftAnimate');
+                            name.classList.add('rightToLeftAnimate');
+                        }
+                        if (vectorClickW === 'left') {
+                            text.classList.add('leftToRightAnimate');
+                            name.classList.add('leftToRightAnimate');
+                        }
+                        a2 = true;
+                        a3 = false;
+                        a4 = true;
+                    }
                     document.getElementById('dot1').classList.remove('activeDot');
                     document.getElementById('dot2').classList.remove('activeDot');
                     document.getElementById('dot3').classList.add('activeDot');
@@ -443,6 +494,19 @@ container.addEventListener('click', function () {
                     name.innerText = Name4;
                     parentElText.appendChild(text);
                     parentElName.appendChild(name);
+                    if(a4) {
+                        if (vectorClickW === 'right') {
+                            text.classList.add('rightToLeftAnimate');
+                            name.classList.add('rightToLeftAnimate');
+                        }
+                        if (vectorClickW === 'left') {
+                            text.classList.add('leftToRightAnimate');
+                            name.classList.add('leftToRightAnimate');
+                        }
+                        a3 = true;
+                        a4 = false;
+                        a5 = true;
+                    }
                     document.getElementById('dot1').classList.remove('activeDot');
                     document.getElementById('dot2').classList.remove('activeDot');
                     document.getElementById('dot3').classList.remove('activeDot');
@@ -458,6 +522,19 @@ container.addEventListener('click', function () {
                     name.innerText = Name5;
                     parentElText.appendChild(text);
                     parentElName.appendChild(name);
+                    if(a5) {
+                        if (vectorClickW === 'right') {
+                            text.classList.add('rightToLeftAnimate');
+                            name.classList.add('rightToLeftAnimate');
+                        }
+                        if (vectorClickW === 'left') {
+                            text.classList.add('leftToRightAnimate');
+                            name.classList.add('leftToRightAnimate');
+                        }
+                        a4 = true;
+                        a5 = false;
+                        a1 = true;
+                    }
                     document.getElementById('dot1').classList.remove('activeDot');
                     document.getElementById('dot2').classList.remove('activeDot');
                     document.getElementById('dot3').classList.remove('activeDot');
@@ -473,7 +550,6 @@ container.addEventListener('click', function () {
         }
     })
 });
-
 
 var parentElText = document.getElementById('containerText');
 var parentElName = document.getElementById('containerName');

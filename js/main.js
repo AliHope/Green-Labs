@@ -250,7 +250,7 @@ $( document ).ready(function() {
         $('.header-top-panel__burger').removeClass('active');
         $('.header-top-panel__menu-mobile').removeClass('active');
         $('.mobile-menu__overflow').removeClass('visible');
-        $('body').removeClass('active')
+        $('body').removeClass('active');
         $("html,body").animate({scrollTop: $("#about-the-cave").offset().top}, 500);
     });
 
@@ -260,7 +260,7 @@ $( document ).ready(function() {
         $('.header-top-panel__burger').removeClass('active');
         $('.header-top-panel__menu-mobile').removeClass('active');
         $('.mobile-menu__overflow').removeClass('visible');
-        $('body').removeClass('active')
+        $('body').removeClass('active');
         $("html,body").animate({scrollTop: $("#services").offset().top}, 1000);
     });
 
@@ -270,7 +270,7 @@ $( document ).ready(function() {
         $('.header-top-panel__burger').removeClass('active');
         $('.header-top-panel__menu-mobile').removeClass('active');
         $('.mobile-menu__overflow').removeClass('visible');
-        $('body').removeClass('active')
+        $('body').removeClass('active');
         $("html,body").animate({scrollTop: $("#prices").offset().top}, 1000);
     });
 
@@ -280,7 +280,7 @@ $( document ).ready(function() {
         $('.header-top-panel__burger').removeClass('active');
         $('.header-top-panel__menu-mobile').removeClass('active');
         $('.mobile-menu__overflow').removeClass('visible');
-        $('body').removeClass('active')
+        $('body').removeClass('active');
         $("html,body").animate({scrollTop: $("#review").offset().top}, 1000);
     });
 
@@ -290,7 +290,7 @@ $( document ).ready(function() {
         $('.header-top-panel__burger').removeClass('active');
         $('.header-top-panel__menu-mobile').removeClass('active');
         $('.mobile-menu__overflow').removeClass('visible');
-        $('body').removeClass('active')
+        $('body').removeClass('active');
         $("html,body").animate({scrollTop: $("#contacts").offset().top}, 1000);
     });
 
@@ -323,5 +323,19 @@ $( document ).ready(function() {
         e.preventDefault();
         $("html,body").animate({scrollTop: $("#contacts").offset().top}, 1000);
     });
-
 });
+
+function initMap() {
+    var myLatLng = {lat: 59.9255931, lng: 30.3667385};
+
+    var map = new google.maps.Map(document.getElementById('mapGoogle'), {
+        zoom: 17,
+        center: myLatLng
+    });
+
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: ''
+    });
+}

@@ -423,9 +423,8 @@
         </div>
     </div>
 
-
     <div id="contacts" class="container-fluid contacts">
-        <script class="contacts-map" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=your_api_key_here"></script><div class="contacts-map" style='overflow:hidden;height:100%;width:100%;'><div id='gmap_canvas' style='height:100%;width:100%;'></div><div><small><a href="http://www.googlemapsgenerator.com/">Googlemapsgenerator.com</a></small></div><div><small><a href="http://kantoorruimtehuren.nu/">KantoorruimteHuren.nu</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:16,center:new google.maps.LatLng(59.92624009999999,30.366867299999967),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(59.92624009999999,30.366867299999967)});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+        <div id="mapGoogle"></div>
         <div class="fill">
             <div class="blockContactInformation">
                 <p class="title">Контакты</p>
@@ -449,11 +448,11 @@
         </div>
     </div>
 
-
 <script src="./js/jquery.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/slickSlider/slick.min.js"></script>
 <script src="./js/Carousel.js"></script>
 <script src="./js/main.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGdvc6BzZFMzyRJ5Jw_YDnsrhdJCJICv0&callback=initMap"></script>
 </body>
 </html>
