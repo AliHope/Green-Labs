@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./js/slickSlider/slick.css"/>
     <link rel="stylesheet" href="./js/slickSlider/slick-theme.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="./images/favicon.ico">
 </head>
 <body>
 
@@ -17,13 +18,13 @@
         <div class="row">
             <div class="header-slider slick-slider">
                 <div class="slide slide1">
-                    <img src="images/slider-header/slide1.jpg" alt="Slide1">
+                    <img src="./images/slider-header/slide1.jpg" alt="Slide1">
                 </div>
                 <div class="slide">
-                    <img src="images/slider-header/slide2.jpg" alt="Slide2">
+                    <img src="./images/slider-header/slide2.jpg" alt="Slide2">
                 </div>
                 <div class="slide">
-                    <img src="images/slider-header/slide3.jpg" alt="Slide3">
+                    <img src="./images/slider-header/slide3.jpg" alt="Slide3">
                 </div>
             </div>
         </div>
@@ -32,7 +33,7 @@
     <div class="container-fluid header">
         <div class="row fill header-top-panel">
             <div class="col-lg-offset-1 col-lg-5 col-md-5 col-sm-3 col-xs-3 header-top-panel__logo">
-                <img src="images/logo.png">
+                <img src="./images/logo.png">
             </div>
             <div class="col-lg-6 col-md-7 col-sm-9 col-xs-8 hidden-xs header-top-panel__menu-desktop">
                 <ul class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
@@ -86,7 +87,7 @@
                 <button id="mobile-about-the-cave-button" type="button">УЗНАТЬ ПРАЙС</button>
             </div>
             <div class="col-lg-5 col-md-6 col-sm-11 col-xs-12 about-the-cave-pic">
-                <img src="images/about-the-cave.png">
+                <img src="./images/about-the-cave.png">
             </div>
         </div>
     </div>
@@ -239,12 +240,13 @@
 
     <div class="container-fluid video-background">
         <div class="row">
-            <div class="video">
-                <video class="video_bg" autoplay="autoplay"  loop="loop" muted>
-                    <source src="video/1.mp4" type="video/mp4"/>
-                    <source src="video/2.webm" type="video/webm"/>
-                </video>
-            </div>
+            <div class="temporary-bg-video"></div>
+            <!--<div class="video">-->
+                <!--<video class="video_bg" autoplay="autoplay"  loop="loop" muted>-->
+                    <!--<source src="video/1.mp4" type="video/mp4"/>-->
+                    <!--<source src="video/2.webm" type="video/webm"/>-->
+                <!--</video>-->
+            <!--</div>-->
             <div class="video-background-overlay"></div>
             <div class="video-background-content">
                 <span class="video-background-content__title">
@@ -366,7 +368,7 @@
         <div class="row fill">
         <div class="sales-background-block">
             <span class="hidden-sm hidden-xs sales-background-block__title">Скидкой можно воспользоваться только один раз</span>
-            <img src="images/sales-background.png">
+            <img src="./images/sales-background.png">
         </div>
             <div class="col-lg-12 col-md-12  col-sm-12 col-xs-12 sales-description">
                 <span class="sales-description__title">Скидка 10% на ВСЁ</span>
@@ -399,8 +401,8 @@
                         <li id="personSlide5">
                             <img src="./images/review-slider/slide5.jpg">
                         </li>
-                        <img src="images/reason-slider/prev-arrow.png" class="left">
-                        <img src="images/reason-slider/next-arrow.png" class="right">
+                        <img src="./images/reason-slider/prev-arrow.png" class="left">
+                        <img src="./images/reason-slider/next-arrow.png" class="right">
                         <span class="review-slider__quote"></span>
                     </ul>
                 </div>
@@ -425,7 +427,7 @@
 
     <div id="contacts" class="container-fluid contacts">
         <div id="mapGoogle"></div>
-        <div class="fill">
+        <div class="row">
             <div class="blockContactInformation">
                 <p class="title">Контакты</p>
                 <div class="informationItem address">
